@@ -1,7 +1,7 @@
 # Olá!!! Sou o Gustavo Thalles
 
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/guhh_santanaa/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavothalles/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](linkedin.com/in/gustavo-thalles-santana-440020277)
 
 Comecei minha carreira pela tecnologia em 2022, profundamente envolvido no campo da Tecnologia, aprimorando minhas competências e conhecimentos em tecnologias e práticas de desenvolvimento de sistemas Web, Mobile e Desktop. Minha formação inclui lógica de programação, diversas linguagens de programação, uso de ferramentas de desenvolvimento, bancos de dados. Também possuo conhecimentos em redes, segurança e ética da informação.
 
