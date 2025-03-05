@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/style.css">
+    <link rel="stylesheet" href="./Estilos/pagestyle1.css">
+    <link rel="icon" type="image/x-icon" href="./Imagens/1-removebg-preview.png">
+    <title>System For Comercy</title>
+</head>
+<body>
+    <script src="./Estilos/menu.js"></script>
+    <header>
+    <img class="logo" src="./Imagens/1-removebg-preview.png" alt="logo">
+
+    <div class="nav">
+        <ul class="nav-links">
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="Equipe.html">Nosso time</a></li>
+            <!--<li><a href="Projetos.html">Projects</a></li>-->
+        </ul>
+    </div>
+
+    <div class="button">
+        <a href="#tips"><button class="btn" type="submit">Contato</button></a>
+    </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./Imagens/iconmenu.png" alt=""></button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul class="nav-links">
+                <li><a href="./Index.html">Home</a></li>
+                <li><a href="./Sobre.html">About</a></li>
+                <li><a href="./Equipe.html">Our Team</a></li>
+                <!--<li><a href="Projetos.html">Projects</a></li>-->
+            </ul>
+            <div class="button">
+                <a href="#tips"><button class="btn" type="submit">Contato</button></a>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class="conteinudo">
+            <img src="./Imagens/work.jpeg" alt="">
+            <div class="textosobre">
+                <h1 class="sobre">Sobre Nós</h1>
+                <h5 class="titulosobre">System For Comercy(SyS.FC)</h5>
+                <p class="psobre">
+                    A System for Comercy surgiu da iniciativa de 5 jovens, Larissa Delatorre, Gustavo Thalles e Vitória Araújo, Erick Vilela do Nascimento e Miguel Lima Gomes enquanto cursavam o ensino técnico em Informática para Internet na Etec de Poá, desenvolvida para o projeto de conclusão de curso no ano de 2023. De acordo com o próprio nome, nossa empresa tem como objetivo sistematizar e revolucionar o comércio das demais instituições, tornando seu gerenciamento tecnológico e prático, com foco na Web. Seu slogan diz: “Visualizando seu comércio & Digitalizando seus Sonhos”.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- pop de contato -->
+ 
+    <div class="overlay" id="tips">
+        <div class="wrapper">
+            <h2>Contate-nos</h2>
+            <a href="#" class="close">&times;</a>
+            <div class="popcontent">
+                <div class="popcontainer">
+                    <form action="Projetos.html" method="POST" >
+                        <label>Nome</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome:">
+                        <label>E-mail</label>
+                        <input type="email" name="email" placeholder="Digite seu e-mail:" required>
+                        <label>Mensagem</label>
+                        <textarea placeholder="Digite sua mensagem:" required name="mensagem"></textarea>
+                        <input type="submit" value="Enviar">
+                        <input type="hidden" name="_subject" value="Novo E-mail de Contato!">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_next" value="http://127.0.0.1/SystemFY/Projetos.html">
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-conteudo">
+            <h3>System for Comercy</h3>
+            <p class="footer-pp">Av. Vital Brasil, 827 - Vl. Acoreana, Poá - SP, 08557-000 <br> systemforcomercy@gmail.com</p>
+            <ul class="footer-sociais">
+                <li><a href="#"><img src="./Imagens/instagram.png" alt="logo instagram"></a></li>
+                <li><a href="#"><img src="./Imagens/twitter.png" alt="logo twitter"></a></li>
+                <li><a href="#"><img src="./Imagens/facebook.png" alt="logo facebook"></a></li>
+                <li><a href="#"><img src="./Imagens/linkedin.png" alt="logo linkedin" ></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <span><p class="footer-p">@2024 SystemForComercy copyright &copy; Todos os direitos reservados</p></span>
+        </div>
+    </footer>
+
+       <!--Libra-->
+        
+       <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+</body>
+</html>
