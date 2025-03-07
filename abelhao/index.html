@@ -39,22 +39,62 @@
                     <img src="img/brigadeiro (1).png" alt="Pote de Mel"/>
                     <h3>Mel Puro</h3>
                     <p>O melhor mel 100% natural para adoçar sua vida.</p>
-                    <button>Comprar</button>
+                    <button data-produto="Mel Puro">Comprar</button>
                 </div>
                 <div class="produto">
                     <img src="img/brigadeiro.png" alt="Colmeia de Abelha"/>
                     <h3>Colmeia Artesanal</h3>
                     <p>Decoração incrível com o charme das abelhas.</p>
-                    <button>Comprar</button>
+                    <button data-produto="Colmeia Artesanal">Comprar</button>
                 </div>
                 <div class="produto">
                     <img src="img/chocolate.png" alt="Geleia Real"/>
                     <h3>Geleia Real</h3>
                     <p>Fonte de energia e saúde, direto da colmeia.</p>
-                    <button>Comprar</button>
-                </div>
+                    <button data-produto="Geleia Real">Comprar</button>
+                </div>                
             </div>
         </section>
+
+        <script>
+        // Função chamada quando o botão de compra é clicado
+function comprarProduto(produto) {
+    // Simulação de pedido
+    alert("Você adicionou " + produto + " ao carrinho!");
+
+    // Exibir opções de pagamento
+    let pagamento = prompt("Escolha a forma de pagamento:\n1. Cartão de Crédito\n2. Boleto Bancário");
+
+    // Simulação de processo de pagamento e redirecionamento para WhatsApp
+    if (pagamento === "1" || pagamento === "2") {
+        let mensagem = "Eu gostaria de comprar o produto: " + produto + ".\nForma de pagamento: ";
+
+        if (pagamento === "1") {
+            mensagem += "Cartão de Crédito";
+        } else if (pagamento === "2") {
+            mensagem += "Boleto Bancário";
+        }
+
+        // URL do WhatsApp com a mensagem pré-preenchida
+        let numeroWhatsApp = "5551999999999"; // Coloque o número de WhatsApp aqui
+        let mensagemUrl = encodeURIComponent(mensagem); // Codifica a mensagem para URL
+        let linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemUrl}`;
+
+        // Redireciona para o WhatsApp
+        window.location.href = linkWhatsApp;
+    } else {
+        alert("Escolha inválida! Tente novamente.");
+    }
+}
+
+// Adiciona um evento de clique para cada botão
+document.querySelectorAll("button[data-produto]").forEach(button => {
+    button.addEventListener("click", function() {
+        let produto = this.getAttribute("data-produto");
+        comprarProduto(produto);
+    });
+});
+</script>
 
       
     <footer>
