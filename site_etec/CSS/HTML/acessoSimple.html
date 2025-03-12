@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../site_etec/CSS/style.css">
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js"></script>
+</head>
+<body>
+<div class="container-login" id="caixa2">
+    <div class="imgbox">
+        <!-- <img src="../../imagens/pul.jpg" alt="dois homens pulando"> -->
+        <img src="../../imagens/mascote.jpg" alt="Imagem">
+    </div>
+    <div class="boxconteudo">
+        <div class="formbox" id="nome_curso">
+            <div>
+                <img src="../../imagens/HelplessBook.png" alt="Simple" class="img-fluid" style="width: 5rem;margin-left: 10rem;">
+            </div>
+            <h2>Olá! Seja bem vindo!</h2>
+            <Form>
+                <div class="inputbox">
+                    <span>Email</span>
+                    <input type="email" placeholder="digite seu e-mail" id="email" required>
+                </div>
+                <div class="inputbox">
+                    <span>Senha</span>
+                    <input type="password" placeholder="digite sua senha" id="senha" required>
+                </div>
+                <div class="inputbox" hidden id="cadSenha">
+                    <span>Nova Senha</span>
+                    <input type="password"  placeholder="digite a nova senha" id="novaSenha" required>
+                </div>
+                <div class="lembrar">
+                    <label style="color: indigo;"><input type="checkbox">Lembrar senha</label>
+                    <a style="color: indigo; cursor: pointer;" href="../site_etec/PHP/EsqueceuSenha.php">Esqueceu a senha</a>
+                </div>
+
+                <div class="inputbox">
+                    <input type="submit" value="Entrar" id="btn_enviar" style="background: lavender;color: indigo;" onMouseOver="onMouseOver(this);" onMouseOut="onMouseOut(this);">
+                </div>
+                <div class="inputbox" hidden>
+                    <input type="submit" value="Registrar" id="btn_cadsenha" style="background: lavender;color: indigo;" onMouseOver="onMouseOver(this);" onMouseOut="onMouseOut(this);">
+                </div>
+                <p id="msg" class="lead text-danger"></p>
+            </Form>
+        </div>
+    </div>
+</div>
+<script src="../site_etec/JS/acessoSimple.js"></script>
+</body>
+</html> 

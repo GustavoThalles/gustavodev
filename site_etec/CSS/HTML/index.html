@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="SITE ETEC DE POÁ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETEC POÁ</title>
+    <link rel="shortcut icon" href="../../imagens/logotipo-etec.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../site_etec/CSS/css-bootstrap/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"> 
+    <link rel="stylesheet" href="../site_etec/CSS/style.css">
+    <link rel="stylesheet" href="../site_etec/CSS/slider.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .mySlides {display:none;}
+        .mode {
+            float:right;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 50%;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+        .img-diminuida {
+  width: 20px !important;
+  height: 20px !important;
+}
+    </style>     
+</head>
+<body>
+    <div class="mode">           
+        <button class="change"><img src="../site_etec/HTML/luzON.png" alt="Imagem" class="img-diminuida"></button>
+    </div>
+    <div id="menuPrincipal"></div>
+
+    <div id="principal" class="container-fluid"></div>
+         
+
+    <footer class="footer-etec">
+        <div class="conteudo-footer">
+            <div class="linha-footer">
+                <div class="coluna-footer">
+                    <h4>Escola</h4>
+                    <ul class="ul-footer">
+                        <li><a href="javascript:void(0)" onclick="loadPag('principal', '../site_etec/HTML/QuemSomos.html');">Quem Somos</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadPag('principal', '../site_etec/HTML/Cursos.html');">Cursos</a></li>
+                        <li><a href="javascript:void(0)" onclick="window.open('https://www.vestibulinhoetec.com.br/home/', '_blank');">Estude Conosco</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadPag('principal', '../site_etec/HTML/Direcao.html');">Direção</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-footer">
+                    <h4>Ajuda</h4>
+                    <ul class="ul-footer">
+                        <li><a href="javascript:void(0)" onclick="loadPag('principal', '../site_etec/HTML/FaleConosco.html');">Dúvidas Frequentes</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadPag('principal', '../site_etec/HTML/FaleConosco.html');">Entre em Contato</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadPag('principal', '../site_etec/HTML/CalendarioAcademico.html');">Calendário Academico</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-footer">
+                    <h4>Empresarial</h4>
+                    <ul class="ul-footer">
+                        <li><a href="javascript:void(0)" onclick="loadPag('principal', '../site_etec/HTML/Parcerias.html');">Parcerias</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadPag('principal', '../site_etec/HTML/PrivacidadeTermosLicenca.html');">Política de privacidade</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadPag('principal', '../site_etec/HTML/PrivacidadeTermosLicenca.html');">Termos de uso</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-footer">
+                    <h4>Redes Sociais</h4>
+                    <div class="redes-sociais">
+                        <a href="https://www.facebook.com/etecdepoa/?locale=pt_BR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/etecpoa/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <span><p class="footer-p">@2023 <a href="http://systemforyou.great-site.net/">SystemForYou</a> copyright &copy; Todos os direitos reservados</p></span>
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+     <script>
+            $( ".change" ).on("click", function() {
+                if( $( "body" ).hasClass( "dark" )) {
+                    $( "body" ).removeClass( "dark" );
+                    $(".change").html('<img src="../site_etec/HTML/luzON.png" alt="Imagem" class="img-diminuida">');
+                } else {
+                    $("body").addClass("dark");
+                    $(".change").html('<img src="../site_etec/HTML/luzOFF.png" alt="Imagem" class="img-diminuida">');
+}
+            });
+        </script>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script src="../site_etec/JS/js-bootstrap/bootstrap.bundle.min.js"></script>
+<script src="../site_etec/JS/index.js"></script>
+
+</html>

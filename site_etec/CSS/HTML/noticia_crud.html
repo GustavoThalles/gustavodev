@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Crud de Curso</title>
+</head>
+<body>
+    <div id="caixa1">
+        <div class="container-fluid">
+            <div class="caixa_inf">
+                <div class="titulo">
+                    <h1>NOTICIAS</h1>
+                </div>
+                
+                <div class="conteudo">
+                    <br>
+                    <input type="button" class="btn btn-info m-1 p-1" value="Cadastrar" id="btn_abrir_cadastro">
+                    <div class="caixa_cursos" id="noticias">
+                        <div id="grid" class="table-responsive"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div_cadastro" class="modal modal-lg">
+        <div class="modal-dialog">
+            <div class="caixa_inf modal-content">
+                <!-- Botão de Fechar [x] -->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Cadastro de notícia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    <input type="hidden" id="noticia_id">
+
+                    <div class="" id="divCadastro">
+                        <div class="m-2">
+                            <label class="form-label m-0" for="titulo">Título:</label>
+                            <input class="form-control form-control-sm m-0" type="text" id="titulo">
+                        </div>
+
+                        <div class="m-2">
+                            <label class="form-label m-1" for="descricao">Descrição:</label>
+                            <textarea class="form-control form-control-sm m-0" id="descricao" maxlength="1000"></textarea> 
+                        </div>
+
+                        <div class="m-2">
+                            <label class="form-label m-1" for="link">Link:</label>
+                            <input class="form-control form-control-sm m-0" type="text" id="link">
+                        </div>
+
+                        <div class="m-2">
+                            <label class="form-label m-1" for="interessado">Interessado:</label>
+                            <select class="form-select form-select-sm m-1" id="interessado">
+                                <option value="Aluno">Aluno</option>
+                                <option value="Geral">Geral</option>
+                            </select>
+                        </div>
+
+                        <div class="m-2">
+                            <label class="form-label m-1" for="imagem">Imagem:</label>
+                            <input class="form-control form-control-sm m-1" type="file" id="imagem">
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <input type="button" value="Salvar" id="btn_salvar" class="btn btn-danger m-1 p-1">
+                        </div>
+                    </div>
+                    
+                    <div class="" id="divCriar">
+                        <div class="m-2">
+                            <label class="form-label m-0" for="titulo">Título:</label>
+                            <input class="form-control form-control-sm m-0" type="text" id="titulo_criar" readonly disabled>
+                        </div>
+
+                        <div class="m-2">
+                            <label class="form-label m-0" for="interessado">Interessado:</label>
+                            <input class="form-control form-control-sm m-0" type="text" id="interessado_criar" readonly disabled>
+                        </div>
+
+                        <div class="m-2">
+                            <label class="form-label m-1" for="corpo">Corpo:</label>
+                            <textarea class="form-control form-control-sm m-0" id="corpo" rows="30" maxlength="5000"></textarea> 
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <input type="button" value="Atualizar" onclick="atualizar();" class="btn btn-danger m-1 p-1">
+                        </div>
+                    </div>
+
+                    <p id="msg_cadastro" class="lead text-danger"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../site_etec/JS/noticias_crud.js"></script>
+</body>
+</html>

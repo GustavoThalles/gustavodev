@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oportunidades</title>
+</head>
+<body>
+    <div id="caixa1" class="modal modal-lg">
+        <div class="modal-dialog">
+            <div class="caixa_inf modal-content">
+                <!-- Botão de Fechar [x] -->
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Informações sobre a oportunidade</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                
+                <div class="modal-body">
+                    <div class="caixa_cursos">
+                        <div id="nome_oportunidade">
+                        </div>
+
+                        <div id="resumo">
+                        </div>
+
+                        <div id="requisitos">
+                        </div>
+
+                        <div id="link">
+                        </div>
+
+                        <div class="m-2">
+                            <label class="form-label m-1" for="contate">Contato</label>
+                            <input type="text" class="form-control form-control-sm m-1" name="contato" id="contato" readonly disabled>
+                        </div>
+
+                        <div class="m-2">
+                            <label class="form-label m-1" for="empresa">Empresa/Instituição</label>
+                            <input type="text" class="form-control form-control-sm m-1" name="empresa" id="empresa" readonly disabled>
+                        </div>
+                        <div class="m-2">
+                            <label class="form-label m-1" for="area">Área</label>
+                            <input type="text" class="form-control form-control-sm m-1" name="area" id="area" readonly disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="caixa2">
+        <div class="container-fluid">
+            <div class="caixa_inf">
+                <div class="titulo">
+                    <h1>OPORTUNIDADES</h1>
+                </div>
+                <br>
+                
+                <div class="conteudo">
+                    Caso você tenha interesse em uma das vagas abaixo, clique em informações para saber mais.
+                    
+                    <div class="caixa_cursos">
+                        <div id="grid" class="table-responsive"></div>
+                    </div>
+                </div>
+
+                <p id="msg" class="lead text-danger"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../site_etec/JS/oportunidades.js"></script>
+</body>
+</html>
