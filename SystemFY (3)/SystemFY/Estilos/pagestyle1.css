@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Toda a navbar e alguns recursos que implementam o body*/
+*
+{
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+    /*background-color: #24252a;*/
+}
+
+.about
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #dbd8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .conteinudo img
+{
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+.textosobre
+{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.conteinudo
+{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textosobre .sobre
+{
+    color: #000000;
+    font-size: 85px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.textosobre .titulosobre
+{
+    color: #7d4dd6;
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.textosobre .psobre
+{
+    color: #000000;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    font-family: 'Merriweather', serif;
+}
+
+/* 'Merriweather', serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Poppins', sans-serif;
+ */
+
+ @media screen and (max-width: 240px){
+ .sobre
+ {
+    width: 100%; 
+    padding: 70px 0px;
+    overflow: hidden;
+ }
+
+ 
+}
+
+@media screen and (max-width: 780px) 
+{
+    .about .conteinudo img
+    {
+        margin-top: 400px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .textosobre .sobre
+    {
+        font-size: 60px;
+        flex-direction: column;
+
+    }
+    .textosobre .psobre
+    {
+        font-size: 15px;
+        width: 100%;
+        flex-direction: column;
+        overflow-y: hidden;
+        position: relative;
+        text-align: center;
+    }
+
+}
